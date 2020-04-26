@@ -1,11 +1,8 @@
 package com.company;
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
-                System.out.println("Введите темпиратуру в Цельсиях   ") ;
-                double TC=scan.nextDouble();
-                double TF=TC*(9.0/5.0)+32;
-                System.out.println("Темпиратура по Фаренгейту равна: "+TF);
+        int a=5, b=9;
+        int c=(a+b);
+                System.out.println("Сумма двух чисел: "+c);
     }
 }
