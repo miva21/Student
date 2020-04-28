@@ -8,7 +8,7 @@ public class Main {
         int a = scan.nextInt();
         System.out.print("Введите второе число для сравнения ");
         int b = scan.nextInt();
-        System.out.print("Введите второе число для сравнения ");
+        System.out.print("Введите третье число для сравнения ");
         int c = scan.nextInt();
         System.out.println(a==b&&b==c?"Упс..введеные числа равны!":"Минимальное число "+minim(a,b,c));
         System.out.println("EnD");
