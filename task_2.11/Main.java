@@ -10,7 +10,7 @@ public class Main {
             if (minut>15 && minut<=30) System.out.println("Вторая четверь часа");
                 if (minut>30 && minut<=45) System.out.println("Третья четверь часа");
                     if (minut>45) System.out.println("Последняя четверь часа");
-        else
+                    else
         System.out.println("EnD");
     }
 }
