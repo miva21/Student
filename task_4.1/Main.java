@@ -10,7 +10,6 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         System.out.print("Введите второе число для сравнения ");
-        scan = new Scanner(System.in);
         int b = scan.nextInt();
         System.out.println(min(a,b));
         if (a>b) System.out.println("Минимальное число "+b);
