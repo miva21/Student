@@ -17,18 +17,16 @@ public class Main {
         System.out.println(a==b&&d==c&&c==a?"Упс..введеные числа равны!":"Минимальное число "+minima(a,b,c,d));
         System.out.println("EnD");
     }
-        static int minima(int a, int b, int c, int d) {
-            a=minim(a,b);
-            b=minimc(c,d);
-            if (a>b) return b;
-            else return a;
+    static int minima(int a, int b, int c, int d) {
+        a=minim(a,b);
+        b=c;
+        a=minim(a,b);
+        b=d;
+        a=minim(a,b);
+        return a;
     }
-        static int minim(int a, int b) {
-            if (a > b) return b;
-            else return a;
-    }
-        static int minimc(int d, int c) {
-            if (d>c) return c;
-            else return d;
+    static int minim(int a, int b) {
+        if (a>b) return b;
+        else return a;
     }
 }
