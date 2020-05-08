@@ -8,8 +8,7 @@ public class Main {
             int a = 42 / 0;
         }
         catch (ArithmeticException ee) {
-              System.out.println(ee.getMessage()+" -- Вы пытаетесь разделить на НОЛЬ");
-              ee.printStackTrace(); // Тип исключения это <ArithmeticException> или </ by zero>?
+             ee.printStackTrace();
         }
     }
 }
