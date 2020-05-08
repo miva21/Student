@@ -6,9 +6,8 @@ public class Main {
     public static void main(String[] args) {
         try {
             int a = 42 / 0;
-            if(a<0) throw new Exception();
         }
-        catch (Exception ee) {
+        catch (ArithmeticException ee) {
               System.out.println(ee.getMessage()+" -- Вы пытаетесь разделить на НОЛЬ");
               ee.printStackTrace(); // Тип исключения это <ArithmeticException> или </ by zero>?
         }
