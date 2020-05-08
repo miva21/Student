@@ -9,7 +9,8 @@ public class Main {
             int[] m = new int[2];
             m[8] = 5;
         } catch (ArrayIndexOutOfBoundsException sd) {
-            System.out.println(sd.getMessage()+" -- Указано число вне размерности массива!!"); //sd.printStackTrace();
+            sd.printStackTrace();
+            System.out.println(sd.getMessage()+" -- Указано число вне размерности массива!!");
         }
     }
 }
