@@ -28,6 +28,8 @@ public class Main {
         System.out.println("EnD");
     }
     static LocalDate getEaster(int god) {
+        int mes;
+        int den;
         int a = god % 19;
         int b = god % 4;
         int c = god % 7;
@@ -35,11 +37,11 @@ public class Main {
         int e = (2 * b + 4 * c + 6 * d + 6) % 7;
         int f = d + e;
         if (f <= 26) {
-            int den = f + 4;
-            int mes=04;
-            return LocalDate.of(god,mes,den);
+            den = f + 4;
+            mes=04;
         }   else {
-            return LocalDate.of(god,12,31);
-        }
+            den = f - 26;
+            mes=05;
+        } return LocalDate.of(god,mes,den);
     }
 }
