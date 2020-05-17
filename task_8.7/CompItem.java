@@ -1,3 +1,3 @@
 public interface CompItem {
-  String getName();
+    String getName();
 }
