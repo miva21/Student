@@ -29,8 +29,8 @@ public class Main {
         if (isWork(computer.getKeyboard()) &&
                 isWork(computer.getMonitor()) &&
                 isWork(computer.getMouse())) {
-            System.out.println("уСЁ ОК!");
-        }
+                    System.out.println("уСЁ ОК!");
+                }
     }
     public static boolean isWork(CompItem item) {
         System.out.println(item.getName());
