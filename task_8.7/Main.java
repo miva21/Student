@@ -25,11 +25,11 @@ package com.company;
 */
 public class Main {
     public static void main(String[] args) {
-        Computer computer = new Computer(new Keybord(), new Mouse(), new Monitor());
-        if (isWork(computer.getKeybord()) &&
+        Computer computer = new Computer(new Keyboard(), new Mouse(), new Monitor());
+        if (isWork(computer.getKeyboard()) &&
                 isWork(computer.getMonitor()) &&
                 isWork(computer.getMouse())) {
-            System.out.println("Work!");
+            System.out.println("уСЁ ОК!");
         }
     }
     public static boolean isWork(CompItem item) {
